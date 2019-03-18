@@ -1,0 +1,27 @@
+.index-adunit {
+  @extend .jumbotron-fluid;
+  color: #FFFFFF;
+  background-image: url('/static/images/index-adunit.jpg');
+  background-position: center bottom;
+  background-size: cover;
+  padding-top:200px;
+  padding-bottom: 350px;
+  text-align: center;
+  h1 {
+    font-size: 4rem;
+    font-weight:300;
+  }
+  p {
+      max-width: 60%;
+      display: inline-block;
+      
+    }
+}
+
+@include media-breakpoint-down(sm) {
+  .index-adunit {
+    p {
+      max-width: 100%;
+    }
+  }
+}

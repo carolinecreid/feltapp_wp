@@ -1,0 +1,142 @@
+/*
+Theme Name: Felt Custom Theme
+Theme URI: http://www.cssigniter.com/themes/demotheme
+Author: CSSIgniter
+Author URI: http://www.feltapp.com/
+Description: Custom site for Felt App
+Version: 1.0
+*/
+
+@import "css/inc/variables";
+@import "css/inc/adunits";
+@import "css/inc/base";
+@import "css/inc/links";
+@import "css/inc/navbars";
+@import "css/inc/sections";
+@import "css/inc/styleguide";
+@import "css/inc/variables";
+@import "css/inc/mixins/";
+@import "css/inc/vendor/bootstrap/scss/bootstrap.scss";
+
+
+html {
+  height: 100%;
+}
+body {
+  height:100%;
+  width:100%;
+  padding:0;
+  margin:0;
+  overflow-x:hidden;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.4rem;
+  font-weight: 300;
+}
+
+.navbar {
+  z-index: 1 !important;
+}
+
+.btn-up {
+  @extend .btn;
+  // border: 1px solid #FFFFFF;
+  box-shadow: 0 2px 14px rgba(0,0,0,.11);
+  font-size: .8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@include media-breakpoint-down(sm) {
+  body {
+    font-size: 1.3rem;
+  }
+}
+.product-card {
+  @extend .card;
+  a {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+  }
+}
+
+.my-100 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.my-200 {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.index-pr {
+  margin: 2rem 2rem 0 2rem;
+  background-color: rgb(253, 249, 244);
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .col-auto {
+    padding-bottom: 20px;
+  }
+}
+
+.feature-list {
+  a {
+    font-size: 1.3rem;
+    color: rgb(137, 160, 202);
+    font-weight: 600;
+    &:hover {
+      text-decoration: none;
+      color: #ffffff;
+    }
+  }
+
+}
+
+.footer {
+  color: #ffffff;
+  h2 {
+    color: #ffffff;
+  }
+  .links {
+    a {
+      font-size: 1rem;
+      color: #ffffff;
+      &:hover {
+        text-decoration: none;
+        color: rgb(137, 160, 202);
+
+      }
+    }
+    p {
+      font-size: 1.1rem;
+      color: rgb(137, 160, 202);
+      font-weight: 800;
+    }
+  }
+  .inline-links {
+    margin-left: -15px;
+    a {
+      @extend .mr-md-5;
+      @extend .mr-sm-3;
+      font-size: .8rem;
+      color: rgb(137, 160, 202);
+      &:hover {
+        text-decoration: none;
+        color: #ffffff;
+      }
+    }
+  }
+}

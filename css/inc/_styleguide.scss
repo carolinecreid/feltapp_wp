@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,300,400,600,800');
+body {
+  font-family: 'Work Sans', sans-serif;
+  -webkit-font-smoothing: antialiased !important; 
+  font-weight: 300;
+}
+.row {
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+b, strong {
+  font-weight: 600;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #343a40;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 1.4;
+  text-transform: none;
+  font-style: normal;    
+}
+
+h1 { font-size: 3.2rem; line-height:3.8rem;}
+h2 { font-size: 2.5rem; line-height:3.2rem;}
+h3 { font-size: 1.9rem; line-height:2.2rem;}
+h4 { font-size: 1.6rem; }
+h5 { font-size: 1.35rem; }
+h6 { font-size: 1.12rem; }

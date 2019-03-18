@@ -1,0 +1,13 @@
+nav {
+    &.navbar-grey {
+      background-color: #FFFFFF;
+      border-bottom: 1px solid #DDDDDD;
+      a {
+        color: #333333;
+        &:hover {
+          color: #333333;
+          text-decoration: underline;
+        }
+      }
+    }
+  }

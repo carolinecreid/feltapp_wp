@@ -1,0 +1,24 @@
+$yiq-contrasted-threshold: 200;
+$badge-font-weight: 400;
+$primary: rgb(225, 183, 83);
+$secondary: #e9ecef !default;
+//$border-radius: 15%;
+
+$btn-font-weight: 300;
+
+@import "vendor/bootstrap/scss/functions";
+@import "vendor/bootstrap-4.1.3/scss/variables";
+
+$theme-colors: map-merge(
+                (
+                        "dark-blue": rgb(36, 45, 55),
+                        "facebook": rgb(59, 88, 152),
+                        "google": #FFFFFF,
+                        "dropbox": rgb(0, 112, 224),
+                        "yahoo": #6001d2,
+                        "felt-original": rgb(107, 212, 148),
+          "felt-plus": rgb(225, 183, 83),
+          "felt-pro": rgb(117, 200, 211)
+                ),
+                $theme-colors
+);
