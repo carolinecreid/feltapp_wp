@@ -3,8 +3,8 @@
  * The header for the theme
  *
  */
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

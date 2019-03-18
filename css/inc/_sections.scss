@@ -1,5 +1,7 @@
+@import 'vendor/bootstrap/scss/_variables';
 @import 'mixins/grid';
 @import 'mixins/section';
+
 .wrapper {
   width:100%;
   height:100%;
@@ -28,7 +30,6 @@
 	transition: all ease 0.5s; 
 }
 
-@include make-boxes("box");
 
 
 .section {

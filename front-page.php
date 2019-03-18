@@ -31,7 +31,7 @@ $pc = get_post_custom();
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12"><a title="" href="/products" style="padding: 10px; letter-spacing:2px; border: 1px solid rgb(255, 255, 255); background-color: #E1B752; border-radius:6px; text-align:center; color: #ffffff; text-transform: uppercase; font-weight: 600; font-size: 0.8rem;" class="btn btn-primary px-5"><?php the_field('hero_button'); ?></a></div>
+                    <div class="col-12"><a title="" href="<?php the_field('hero_button_link'); ?>" style="padding: 10px; letter-spacing:2px; border: 1px solid rgb(255, 255, 255); background-color: #E1B752; border-radius:6px; text-align:center; color: #ffffff; text-transform: uppercase; font-weight: 600; font-size: 0.8rem;" class="btn btn-primary px-5"><?php the_field('hero_button'); ?></a></div>
                 </div>
             </div>
         </div>
