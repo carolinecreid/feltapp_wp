@@ -60,7 +60,7 @@ get_header();
         </div>
     </div>
 </div>
-<div data-section="" class="section text-dark my-5 overlay-img section-vh-80">
+<div id="pricing" data-section="" class="section text-dark my-5 overlay-img section-vh-80">
     <div class="boxes overlay-img">
         <div class="box-12 box-md-6 align-items-center justify-content-center overlay-img">
             <div style="width: 90%;" data-builder="" class="overlay-img">
@@ -106,7 +106,7 @@ get_header();
         </div>
     </div>
 </div>
-<div data-section="" class="section text-dark my-5 section-auto overlay-img">
+<div id="bundle" data-section="" class="section text-dark my-5 section-auto overlay-img">
     <div class="boxes overlay-img">
         <div class="box-sm-12 box-md-6 align-items-center justify-content-center text-center mt-4 overlay-img">
             <div style="width: 80%;" data-builder="" class="overlay-img">
@@ -119,8 +119,8 @@ get_header();
                 </div>
             </div>
         </div>
-        <div class="box-sm-12 box-md-6 text-light text-right align-items-center justify-content-end overlay-img">
-            <div style="width:100%;" data-builder="" class="overlay-img">
+        <div class="box-12 box-md-6 align-items-center justify-content-center overlay-img">
+            <div style="width:90%;" data-builder="" class="overlay-img">
                 <div class="row overlay-img">
                     <div class="col overlay-img"><img src="<?php the_field('pricing_sect3_img'); ?>" class="img-fluid"></div>
                 </div>
@@ -128,7 +128,7 @@ get_header();
         </div>
     </div>
 </div>
-<div data-section="" class="section text-dark my-5 section-auto overlay-img">
+<div id="save" data-section="" class="section text-dark my-5 section-auto overlay-img">
     <div class="boxes overlay-img">
         <div class="box-12 box-md-6 align-items-center justify-content-center overlay-img">
             <div style="width: 90%;" data-builder="" class="overlay-img">

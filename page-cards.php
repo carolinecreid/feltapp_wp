@@ -41,8 +41,8 @@ get_header();
                 </div>
             </div>
         </div>
-        <div class="box-sm-12 box-md-6 text-light text-right align-items-center justify-content-end overlay-img">
-            <div style="width:100%;" data-builder="" class="overlay-img">
+        <div class="box-12 box-md-6 align-items-center justify-content-center">
+            <div style="width:90%;" data-builder="" class="overlay-img">
                 <div class="row overlay-img">
                     <div class="col overlay-img"><img src="<?php the_field('cards_sect1_img'); ?>" class="img-fluid"></div>
                 </div>
@@ -87,8 +87,8 @@ get_header();
                 </div>
             </div>
         </div>
-        <div class="box-sm-12 box-md-6 text-light text-right align-items-center justify-content-end overlay-img">
-            <div style="width:100%;" data-builder="" class="overlay-img">
+        <div class="box-12 box-md-6 align-items-center justify-content-center">
+            <div style="width:90%;" data-builder="" class="overlay-img">
                 <div class="row overlay-img">
                     <div class="col overlay-img"><img src="<?php the_field('cards_sect3_img'); ?>" class="img-fluid"></div>
                 </div>

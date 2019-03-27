@@ -29,12 +29,11 @@ add_theme_support( 'html5', array(
 /** 
  * Include primary navigation menu
  */
-function untheme_nav_init() {
-	register_nav_menus( array(
-		'menu-1' => 'Primary Menu',
-	) );
+
+function register_my_menu() {
+  register_nav_menu('header-menu',__( 'Header Menu' ));
 }
-add_action( 'init', 'untheme_nav_init' );
+add_action( 'init', 'register_my_menu' );
 
 /**
  * Register widget area.

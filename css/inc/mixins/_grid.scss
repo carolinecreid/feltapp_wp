@@ -1,67 +1,69 @@
+@import '../vendor/bootstrap-4.1.3/scss/variables';
+@import '../vendor/bootstrap-4.1.3/scss/mixins/grid';
+@import '../vendor/bootstrap-4.1.3/scss/mixins/breakpoints';
 
+@mixin make-boxes($column-name: "box", $columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
+  // Common properties for all breakpoints
+  %box-column {
+    position: relative;
+    width: 100%;
+    display: flex;
+    min-height: 1px; // Prevent columns from collapsing when empty
+    -webkit-transition: all ease 0.5s;
+  	-moz-transition: all ease 0.5s;
+  	-ms-transition: all ease 0.5s;
+  	-o-transition: all ease 0.5s;
+  	transition: all ease 0.5s; 
+  }
 
-// @mixin make-boxes($column-name: "box", $columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
-//   // Common properties for all breakpoints
-//   %box-column {
-//     position: relative;
-//     width: 100%;
-//     display: flex;
-//     min-height: 1px; // Prevent columns from collapsing when empty
-//     -webkit-transition: all ease 0.5s;
-//   	-moz-transition: all ease 0.5s;
-//   	-ms-transition: all ease 0.5s;
-//   	-o-transition: all ease 0.5s;
-//   	transition: all ease 0.5s; 
-//   }
+  @each $breakpoint in map-keys($breakpoints) {
+    $infix: breakpoint-infix($breakpoint, $breakpoints);
+    // Allow columns to stretch full width below their breakpoints
+    @for $i from 1 through $columns {
+      .#{$column-name}#{$infix}-#{$i} {
+        @extend %box-column;
+      }
+    }
+    .#{$column-name}#{$infix},
+    .#{$column-name}#{$infix}-auto {
+      @extend %box-column;
+    }
 
-//   @each $breakpoint in map-keys($breakpoints) {
-//     $infix: breakpoint-infix($breakpoint, $breakpoint);
-//     // Allow columns to stretch full width below their breakpoints
-//     @for $i from 1 through $columns {
-//       .#{$column-name}#{$infix}-#{$i} {
-//         @extend %box-column;
-//       }
-//     }
-//     .#{$column-name}#{$infix},
-//     .#{$column-name}#{$infix}-auto {
-//       @extend %box-column;
-//     }
+    @include media-breakpoint-up($breakpoint, $breakpoints) {
+      // Provide basic `.col-{bp}` classes for equal-width flexbox columns
+      .#{$column-name}#{$infix} {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+      }
+      .#{$column-name}#{$infix}-auto {
+        flex: 0 0 auto;
+        width: auto;
+        max-width: none; // Reset earlier grid tiers
+      }
 
-//     @include media-breakpoint-up($breakpoint, $breakpoints) {
-//       // Provide basic `.col-{bp}` classes for equal-width flexbox columns
-//       .#{$column-name}#{$infix} {
-//         flex-basis: 0;
-//         flex-grow: 1;
-//         max-width: 100%;
-//       }
-//       .#{$column-name}#{$infix}-auto {
-//         flex: 0 0 auto;
-//         width: auto;
-//         max-width: none; // Reset earlier grid tiers
-//       }
+      @for $i from 1 through $columns {
+        .#{$column-name}#{$infix}-#{$i} {
+          @include make-col($i, $columns);
+        }
+      }
 
-//       @for $i from 1 through $columns {
-//         .#{$column-name}#{$infix}-#{$i} {
-//           @include make-col($i, $columns);
-//         }
-//       }
+      .order#{$infix}-first { order: -1; }
 
-//       .order#{$infix}-first { order: -1; }
+      .order#{$infix}-last { order: $columns + 1; }
 
-//       .order#{$infix}-last { order: $columns + 1; }
+      @for $i from 0 through $columns {
+        .order#{$infix}-#{$i} { order: $i; }
+      }
 
-//       @for $i from 0 through $columns {
-//         .order#{$infix}-#{$i} { order: $i; }
-//       }
-
-//       // `$columns - 1` because offsetting by the width of an entire row isn't possible
-//       @for $i from 0 through ($columns - 1) {
-//         @if not ($infix == "" and $i == 0) { // Avoid emitting useless .offset-0
-//           .offset#{$infix}-#{$i} {
-//             @include make-col-offset($i, $columns);
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+      // `$columns - 1` because offsetting by the width of an entire row isn't possible
+      @for $i from 0 through ($columns - 1) {
+        @if not ($infix == "" and $i == 0) { // Avoid emitting useless .offset-0
+          .offset#{$infix}-#{$i} {
+            @include make-col-offset($i, $columns);
+          }
+        }
+      }
+    }
+  }
+}

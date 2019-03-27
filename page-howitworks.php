@@ -29,7 +29,7 @@ get_header();
     <div class="boxes">
         <div style="background-color: rgb(253, 249, 244);" class="box mt-4 mx-5 py-5 text-dark text-center align-items-center justify-content-center">
             <div class="overlay"></div>
-            <div style="width: 85%;" data-builder="">
+            <div style="width: 60%;" data-builder="">
                 <div class="row" style="padding-bottom:30px;">
                     <div class="col">
                         <h1><?php the_field('hiw_sect1_h1'); ?></h1>
@@ -60,8 +60,8 @@ get_header();
                 </div>
             </div>
         </div>
-        <div class="box-sm-12 box-md-6 text-light text-right align-items-center justify-content-end">
-            <div style="width:100%;" data-builder="">
+        <div class="box-12 box-md-6 align-items-center justify-content-center">
+            <div style="width:90%;" data-builder="">
                 <div class="row">
                     <div class="col"><img src="<?php the_field('hiw_step1_img'); ?>" class="img-fluid"></div>
                 </div>
@@ -107,8 +107,8 @@ get_header();
                 </div>
             </div>
         </div>
-        <div class="box-sm-12 box-md-6 text-light text-right align-items-center justify-content-end">
-            <div style="width:100%;" data-builder="">
+        <div class="box-12 box-md-6 align-items-center justify-content-center">
+            <div style="width:90%;" data-builder="">
                 <div class="row">
                     <div class="col"><img src="<?php the_field('hiw_step3_img'); ?>" class="img-fluid"></div>
                 </div>

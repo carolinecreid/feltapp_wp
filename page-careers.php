@@ -9,8 +9,7 @@ get_header();
     <div class="boxes overlay-img">
         <div class="box-12 text-center align-items-center justify-content-center overlay-img">
             <div class="overlay overlay-img">
-                <div class="overlay-img" style="background-image: url(&quot;/static/images/careers/img-bg-careers-1@2x.png&quot;);"></div>
-                <div class="overlay-color overlay-img" style="background-color: rgb(0, 0, 0); opacity: 0.15; background-image: url(<?php the_field('careers_hero_img'); ?>);"></div>
+                <div class="overlay-img" style="background-image: url(<?php the_field('careers_hero_img'); ?>);"></div>
             </div>
             <div style="width: 35%; opacity: 1;" data-builder="" class="overlay-img">
                 <div class="row overlay-img">
@@ -32,7 +31,7 @@ get_header();
             <div style="width: 45%;" data-builder="">
                 <div class="row">
                     <div class="col">
-                        <h2><?php the_field('careers_sect_h1'); ?></h2>
+                        <h2><?php the_field('careers_sect1_h1'); ?></h2>
                     </div>
                 </div>
                 <div class="row mt-5" style="position: relative; left: 0px; top: 0px;">
@@ -64,14 +63,14 @@ get_header();
                         <h2><?php the_field('careers_sect2_2_h1'); ?></h2>
                         <p><br><?php the_field('careers_sect2_2_p'); ?></p>
                         <p><a href="<?php the_field('careers_sect2_2_cta_link'); ?>" class="big-link">
-                        <?php the_field('careers_sect2_2_cta'); ?></a>
+                        <?php the_field('careers_sect2_2_CTA'); ?></a>
                         </p>
                     </div>
                     <div class="col text-left overlay-img" style="padding:20px;">
                         <h2><?php the_field('careers_sect2_3_h1'); ?></h2>
                         <p><br><?php the_field('careers_sect2_3_p'); ?></p>
                         <p><a href="<?php the_field('careers_sect2_3_cta_link'); ?>" class="big-link">
-                        <?php the_field('careers_sect2_3_cta'); ?></a>
+                        <?php the_field('careers_sect2_3_CTA'); ?></a>
                         </p>
                     </div>
                 </div>

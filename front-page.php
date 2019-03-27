@@ -22,7 +22,7 @@ $pc = get_post_custom();
             <div style="width: 40%; opacity: 1;" data-builder="">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 style="color: rgb(255, 255, 255);"><?php the_field('hero_h1'); ?></h1>
+                        <h1 style="color: rgb(255, 255, 255); font-family: 'Work Sans', sans-serif;"><?php the_field('hero_h1'); ?></h1>
                     </div>
                 </div>
                 <div class="row">
@@ -99,13 +99,33 @@ $pc = get_post_custom();
         </div>
     </div>
 </div>
-<div style="padding-bottom:20px; padding-top:20px;" data-section="" class="section text-light overlay-img section-vh-80">
-    <div class="boxes overlay-img">
-        <div class="box-12 text-center align-items-center justify-content-center overlay-img">
-            <div class="overlay overlay-img"><img src="<?php the_field('sect3_img'); ?>" width="100%" height="auto"></div>
+
+<div data-section="" class="section section-auto text-dark my-5">
+    <div class="boxes">
+        <div class="box-12 box-md-4 align-items-center justify-content-center">
+            <div style="width: 90%;" data-builder="">
+                <div class="row">
+                    <div class="col"><img src="<?php the_field('sect3_img'); ?>" class="img-fluid"></div>
+                </div>
+            </div>
+        </div>
+        <div class="box-12 box-md-4 align-items-center justify-content-center">
+            <div style="width: 90%;" data-builder="">
+                <div class="row">
+                    <div class="col"><img src="<?php the_field('sect3_img_2'); ?>" class="img-fluid"></div>
+                </div>
+            </div>
+        </div>
+		<div class="box-12 box-md-4 align-items-center justify-content-center">
+            <div style="width: 90%;" data-builder="">
+                <div class="row">
+                    <div class="col"><img src="<?php the_field('sect3_img_3'); ?>" class="img-fluid"></div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+
 <div style="padding-bottom:40px;" data-section="" class="section text-light section-vh-100">
     <div class="boxes">
         <div class="box-12 align-items-center justify-content-center bg-white text-light text-center">

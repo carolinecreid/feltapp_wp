@@ -80,10 +80,11 @@ get_header();
                         <p style="padding-bottom:30px;"><?php the_field('contact_sidebar_inquiries'); ?></p>
         
                         <p><a href="https://www.facebook.com/FeltApp/">
-                            <img src="/static/images/contact/Facebook.png" style="padding:10px;"></a><a href="https://twitter.com/feltapp">
-                            <img src="/static/images/contact/Twitter.png" style="padding:10px;"></a><a href="https://www.pinterest.com/feltcards/">
-                            <img src="/static/images/contact/Pinterest.png" style="padding:10px;"></a><a href="http://instagram.com/feltapp">
-                            <img src="/static/images/contact/Instagram.png" style="padding:10px;"></a>
+                            <img src="https://testsite982331334.wpcomstaging.com/wp-content/uploads/2019/03/Facebook.png" style="padding:10px;"></a><a href="https://twitter.com/feltapp">
+                            <img src="
+https://testsite982331334.wpcomstaging.com/wp-content/uploads/2019/03/Twitter.png" style="padding:10px;"></a><a href="https://www.pinterest.com/feltcards/">
+                            <img src="https://testsite982331334.wpcomstaging.com/wp-content/uploads/2019/03/Pinterest.png" style="padding:10px;"></a><a href="http://instagram.com/feltapp">
+                            <img src="https://testsite982331334.wpcomstaging.com/wp-content/uploads/2019/03/Instagram.png" style="padding:10px;"></a>
                         </p>
                     </div>
                 </div>
